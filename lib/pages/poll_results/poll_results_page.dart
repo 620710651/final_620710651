@@ -11,7 +11,11 @@ class PollResultsPage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         // todo: Add your UI by replacing this Container()
-        child: Container(),
+        Text('บุคคลใดที่ท่านจะสนับสนุนให้เป็นนายกรัฐมนตรีในการเลือกตั้งครั้งนี้')
+        child: Container(
+
+
+        ),
       ),
     );
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../../models/poll.dart';
+import 'package:http/http.dart';
+import '../../models/poll.dart' ;
 import '../my_scaffold.dart';
 
 class HomePage extends StatefulWidget {
@@ -22,7 +22,10 @@ class _HomePageState extends State<HomePage> {
 
   _loadData() async {
     // todo: Load list of polls here
-  }
+      List<Poll> _polls = [
+
+      ];
+    }
 
   @override
   Widget build(BuildContext context) {
@@ -47,8 +50,11 @@ class _HomePageState extends State<HomePage> {
     return ListView.builder(
       itemCount: _polls!.length,
       itemBuilder: (BuildContext context, int index) {
+        var Poll = _polls![index];
         // todo: Create your poll item by replacing this Container()
-        return Container();
+
+        return Container(
+        );
       },
     );
   }
